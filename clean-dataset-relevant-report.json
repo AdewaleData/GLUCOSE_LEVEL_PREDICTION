@@ -1,0 +1,65 @@
+{
+  "input_file": "c:\\Users\\555555\\OneDrive\\Desktop\\GLUCOSE\\clean-dataset.csv",
+  "output_file": "c:\\Users\\555555\\OneDrive\\Desktop\\GLUCOSE\\clean-dataset-relevant.csv",
+  "original_rows": 844946,
+  "full_duplicate_rows_removed": 837678,
+  "after_full_dedup_rows": 7268,
+  "after_physiology_filter_rows": 7268,
+  "iqr_rows_removed_total": 0,
+  "conflicting_states_resolved_by_median": 2320,
+  "after_conflict_resolution_rows": 2342,
+  "nan_inf_rows_removed": 0,
+  "final_rows": 2342,
+  "dropped_columns": [
+    "index",
+    "pl"
+  ],
+  "state_columns_for_uniqueness": [
+    "Patient_Id",
+    "PPG_Signal",
+    "Heart_Rate",
+    "Systolic_Peak",
+    "Diastolic_Peak",
+    "Pulse_Area",
+    "Gender",
+    "Age",
+    "Height",
+    "Weight"
+  ],
+  "outlier_rows_detected_by_column": {
+    "Heart_Rate": 0,
+    "Age": 0,
+    "Height": 0,
+    "Weight": 0,
+    "Glucose_level": 0
+  },
+  "iqr_outlier_rows_detected_by_signal_column": {
+    "PPG_Signal": 0,
+    "Systolic_Peak": 0,
+    "Diastolic_Peak": 0,
+    "Pulse_Area": 0
+  },
+  "final_columns": [
+    "Patient_Id",
+    "PPG_Signal",
+    "Heart_Rate",
+    "Systolic_Peak",
+    "Diastolic_Peak",
+    "Pulse_Area",
+    "Gender",
+    "Gender_Binary",
+    "Age",
+    "Height",
+    "Weight",
+    "Height_m",
+    "BMI",
+    "BSA_Mosteller",
+    "PulsePressure",
+    "MAP",
+    "RPP",
+    "ShockIndex",
+    "PulseArea_per_HR",
+    "PulseArea_per_PP",
+    "Glucose_level"
+  ]
+}
